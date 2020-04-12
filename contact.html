@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>B2C.Hotels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--bootstrap style-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Font awasome-->
+    <script src="https://kit.fontawesome.com/2fdbdff8d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/bpg-arial.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="images/B2clogo.jpg" width="80" height="43" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class = "navbar-nav">
+          <li class=" nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+        </ul>
+        <ul class = "navbar-nav">
+          <li class=" nav-item">
+            <a class="nav-link" href="AboutUS.html">About Us</a>
+          </li>
+        </ul>
+        <ul class = "navbar-nav">
+          <li class=" nav-item">
+            <a class="nav-link" href="pricing.html">Price</a>
+          </li>
+        </ul>
+        <ul class = "navbar-nav">
+          <li class=" nav-item">
+            <a class="nav-link" href="logIn.html">Log in</a>
+          </li>
+        </ul>
+        <ul class = "navbar-nav">
+          <li class=" nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class=" sign-button btn  btn-primary btn-md"href="#" style="margin:10px 10px 10px auto">დახმარება</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav  ">
+          <div class="Nav-link dropdown ">
+            <button class="language-btn1 btn btn-md btn-green btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="width:100px; height:38px; margin:0 10px 0 0;">
+              <i class="fas fa-globe-europe"></i>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">ქართული</a>
+              </div>
+            </button>
+          </div>
+        </ul>
+      </nav>
+      <section id="first">
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: 41.716667, lng: 44.783333};
+            var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: uluru})
+            var marker = new google.maps.Marker({position: uluru, map: map});
+          }
+        </script>
+        <script async
+        defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_OE2SNKgydQO8gpq9qrc8XL151TT2RJs&callback=initMap">
+
+        </script>
+      </section>
+      <section id="second">
+        <div class="container1 container">
+          <form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
+            <label for="სახელი">სახელი</label>
+            <input type="text" id="fname" name="firstname" placeholder="თქვენი სახელი">
+            <label for="ელ-ფოსტა">ელ-ფოსტა</label>
+            <input type="text" id="lname" name="lastname" placeholder="თქვენი ელ-ფოსტა">
+            <label for="სათაური">სათაური</label>
+            <input type="text" name="" value="">
+            <label for="ტექსტი">ტექსტი</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </section>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <img src="images/B2clogo.jpg" alt=""style="width:5rem; height:2.6875rem;">
+          </div>
+          <div class="col-lg-2">
+            <h6><i class="fas fa-phone"></i> +995 591 110 200</h6>
+            <h6><i class="fas fa-envelope"></i> info@b2c.ge</h6>
+          </div>
+        </div>
+      </div>
+      <section id="three">
+        <p>DEVELOPED BY</p>
+        <img src="https://www.design.ge/linkback/?version=3&style=4&size=large" alt="">
+        <p>Supported By GRIFFIN.All Rights Reserved.</p>
+      </section>
+    </body>
+  </html>

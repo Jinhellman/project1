@@ -1,0 +1,24 @@
+body{
+  font-family: "BPG Arial", sans-serif;
+}
+h6{
+  line-height: 1.5;
+}
+p{
+  font-size: 0.5;
+}
+.language-btn1{
+  background-color: #fff;
+  color: #000;
+}
+#first{
+  padding: 4% 10%;
+}
+#second{
+  padding: 4% 10%;
+}
+#three{
+  text-align: center;
+  background-color: #e4e4e4;
+  padding: 0.3125rem;
+}

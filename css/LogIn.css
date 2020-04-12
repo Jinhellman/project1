@@ -1,0 +1,56 @@
+body{
+  font-family: "BPG Arial", sans-serif;
+}
+a:hover{
+  text-decoration: none;
+}
+.img{
+padding: 80px;
+}
+.log-h1{
+  font-size: 3rem;
+}
+.log-h3{
+  font-size: 1.2rem;
+  line-height: 2;
+  padding-bottom: 50px;
+}
+.logIn{
+  text-align: center;
+  padding-top: 30px;
+}
+.p1{
+  padding-top: 30px;
+}
+.login-p{
+  line-height: 1;
+  font-size: 0.875rem;
+}
+.myButton {
+	background-color:#ffffff;
+	border-radius:28px;
+	border:1px solid #4eb8f5;
+	display:inline-block;
+	cursor:pointer;
+	color:#4eb8f5;
+	font-family:"Montserrat",sans-serif;
+	font-size:17px;
+	padding:13px 56px;
+	text-decoration:none;
+  margin: 0 130px 20px 0;
+}
+.myButton:hover {
+	background-color:#4eb8f5;
+  color: #fff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.text1{
+  border-style: double;
+  border-color:#3CC7C5;
+  border-radius: 5%;
+  text-align: center;
+  border-width:medium;
+}
